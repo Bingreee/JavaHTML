@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table</title>
+<style>
+table, th, td {
+	border: 1px solid #ccc;
+}
+
+td {
+	width: 100px; /* 셀 너비 */
+	height: 30px; /* 셀 높이 */
+}
+</style>
+</head>
+<body>
+	<!-- colgroup(세로줄) 단위로 묶기 -->
+	<table>
+		<caption>표</caption>
+		<colgroup>
+			<col>
+			<col style="background-color:red"> <!-- 2열 색상 바꾸기 -->
+			<col span=2 style="background-color:green"> <!-- 열 2개 병합해서 색상바꾸기 -->
+		</colgroup>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+	</table>
+</body>
+</html>
