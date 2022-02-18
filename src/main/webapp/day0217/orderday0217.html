@@ -26,7 +26,7 @@
 			margin: 15px 10px; /* 상하 마진 15xp, 좌우 마진 10px */
 		}
 
-			fieldset legend { /* 필드셋의 제목 */
+		fieldset legend { /* 필드셋의 제목 */
 				font-weight: bold; /* 굵은 글자 */
 				font-size: 18px; /* 글자 크기 18px */
 				color: purple; /* 글자색 자주 */
@@ -64,23 +64,21 @@
 	<legend>주문 정보</legend>
 		<ul>
 			<li>
-				<input type="checkbox" name="guaOrder" value="guaOrder" id="guaOrder">
-				<label for="guaOrder">과테말라 안티구아 (100g)</label>
-				<input type="number" min="0" value="0" style="width:80px;">개
+				<label><input type="checkbox">과테말라 안티구아 (100g) </label>
+				<label><input type="number" name="antiqua" value="0" min="0" max="5">개 </label>
 			</li>
 			<li>
-				<input type="checkbox" name="indOrder" value="indOrder" id="indOrder">
-				<label for="indOrder">인도네시아 만델링 (100g)</label>
-				<input type="number" min="0" value="0" style="width:80px;">개
+				<label><input type="checkbox">인도네시아 만델링 (100g) </label>
+				<label><input type="number" name="mandehling" value="0" min="0" max="5">개 </label>
 			</li>
 			<li>
-				<input type="checkbox" name="tamOrder" value="tamOrder" id="tamOrder">
-				<label for="guaOrder">탐라는도다(블렌딩) (100g)</label>
-				<input type="number" min="0" value="0" style="width:80px;">개
+				<label><input type="checkbox">탐라는도다(블렌딩) (100g) </label>
+				<label><input type="number" name="tamna" value="0" min="0" max="5">개 </label>
 			</li>
 		</ul>
 </fieldset>
-
+	<input type="submit" value="주문하기">
+	<input type="reset" value="다시 작성">
 </form>
 </body>
 </html>

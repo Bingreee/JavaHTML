@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>selector</title>
+<style>
+/* li {
+	color: blue;
+} */
+/* .blue {color: blue;}		-->class
+.red {color: red;}
+.big {font-size: 3em;} */
+/* #first { color:red; }		-->id
+#second {color:blue; } */
+
+li strong{ color:lime; }
+#second > em { color:purple; } 
+#second  ~ li{ color:teal; }
+</style>
+</head>
+<body>
+	<ul>
+	<!-- class는 같은 스타일 적용할 것들끼리 묶는 것이니까 중복 ㅇㅋ, id는 태그 구분 하는 것이니까 중복X-->
+	<!-- 여러 클래스를 적용할 땐 공백으로 구분 -->
+		<li class="blue big" id="first">text <strong>text</strong> text text text</li>
+		<li class="red big" id="second">text <em><span>text</span> text</em> text text text</li>
+		<li class="blue" id="third">text text text text text</li>
+		<li class="red" id="fourth">text text text text text</li>
+	</ul>
+</body>
+</html>
