@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>레이아웃</title>
+<style>
+	#container {
+		width: 960px;
+		margin: 10px auto; /*마진을 auto로 설정 : 중앙에 배치*/
+	}
+	header,section,aside,footer {
+		padding: 20px;
+		border: 1px solid gray;
+	}
+	header {
+		margin-bottom: 20px;
+	}
+	section {
+		width: 650px;
+		float: left;
+		margin-bottom: 20px;
+	}
+	aside{
+		width: 200px;
+		float:right;
+		margin-bottom: 20px;
+	}
+	footer{
+		clear:both;
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>사이트 제목</h1>
+		</header>
+		<section>
+			<h2>본문</h2>
+			<article>국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다. 군인은 현역을 면한
+				후가 아니면 국무총리로 임명될 수 없다. 통신·방송의 시설기준과 신문의 기능을 보장하기 위하여 필요한 사항은 법률로
+				정한다. 누구든지 병역의무의 이행으로 인하여 불이익한 처우를 받지 아니한다. 국회는 법률에 저촉되지 아니하는 범위안에서
+				의사와 내부규율에 관한 규칙을 제정할 수 있다.</article>
+			<article>사법권은 법관으로 구성된 법원에 속한다. 공무원은 국민전체에 대한 봉사자이며, 국민에
+				대하여 책임을 진다. 한 회계연도를 넘어 계속하여 지출할 필요가 있을 때에는 정부는 연한을 정하여 계속비로서 국회의 의결을
+				얻어야 한다. 모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 동일한 범죄에 대하여
+				거듭 처벌받지 아니한다.</article>
+		</section>
+		<aside>
+			<h2>사이드 바</h2>
+			<ul>
+				<li>국채를 모집하거나 예산외에 국가의 부담이 될 계약을 체결하려 할 때에는 정부는 미리 국회의 의결을 얻어야
+					한다.</li>
+			</ul>
+		</aside>
+		<footer>
+			<h2>푸터</h2>
+			<p>모든 국민은 보건에 관하여 국가의 보호를 받는다. 국회는 헌법개정안이 공고된 날로부터 60일 이내에 의결하여야
+				하며, 국회의 의결은 재적의원 3분의 2 이상의 찬성을 얻어야 한다.</p>
+		</footer>
+	</div>
+</body>
+</html>
